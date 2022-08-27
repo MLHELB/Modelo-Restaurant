@@ -8,7 +8,7 @@ body{
 .contenedor-global{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows:repeat(4,auto);
+    grid-template-rows:repeat(7,auto);
     grid-template-areas:
                          "logo  logo"
                          "imgone imgone"
@@ -19,7 +19,7 @@ body{
                          "cabañas cabañas";
                             position: relative;
                             z-index: 10;
-                            margin-bottom: 12em;  
+                            margin-bottom: 10em;  
                     
                                            
 }
@@ -326,7 +326,6 @@ figure{
 
 .contenedor-cabañas{
     grid-area: cabañas ;
-    background-color: #fff;
     color: #fff;
     border-bottom: 1px solid #fff; 
     background-image: url(assets/imagenes/fondocabañas.jpg);
@@ -442,7 +441,6 @@ figure{
    position: fixed;
    z-index: 1;
    bottom: 0;
-   height: 12em;
    width: 100%;
    
  
@@ -556,374 +554,6 @@ figure{
 
 
 @media screen and (max-width:480px){
-    .contenedor-global{ 
-        margin-bottom: 15em;                                             
-    }
-      .contenedor-logo{
-            position: fixed;
-            width: 100%;
-            z-index: 999;
-        }
-        .logo-imagen{
-            width: 70%;
-        }
-        .logo-responsive{
-            height: 5.5em;
-            display: none;
-        }
-        
-        
-        
-      
-        #btn-menu{
-        cursor: pointer;
-        display: block;
-        color: #000;
-        text-align: center;
-        padding: 0.2em 0;
-        font-size: 1.5em;
-        transition: all 300ms;
-        width: 30%;
-        }
-        #btn-menu:hover{
-            color: #fff;
-        }
-        .nav{
-            position: fixed;
-            flex-direction: column;
-            justify-content: center;
-            top: 1.4em;
-            width: 100%;
-            left: -100%;
-            transition: all 300ms;
-            
-        }
-        .nav.active{
-            left: 0%;
-        }
-        .menu-item{
-            width: 100%;
-            text-align: center;
-            border-bottom: 1px solid #fff;
-            background: linear-gradient(to left, #5a3f37, #bfe2ca);
-            padding: 1em 0;
-            transition: all 300ms; 
-        }
-        .menu-item:hover{
-            background: linear-gradient(to right, #00467f, #a5cc82); 
-        }
-        
-        .menu-a{
-            display:inline-block;
-            color: #000;
-            transition: all 300ms; 
-            
-        }
-        .menu-a:hover{
-           
-            color: #fff;
-        }
- /*  */
-    /*  */
-    /*  */
-    /*  */
-    /*  */
-    /*  */
-    /*  */
-    /*  */
-    
-    
-    .bienvenida-titulo{
-        font-size: 1.2em;
-        margin-top: 0em;
-    }
-    
-    .bienvenida-texto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: #fff;
-        order: 2;
-        line-height: 1.2em;
-        font-size: 0.8em;
-    }
-    
-    .contenedor-grid{
-        display: flex;
-        flex-direction: column;
-        margin: 0em;
-    }
-    .bienvenida-img{
-        display: flex;
-        flex-direction: column;
-        order: 3;
-    }
-     .bienvenida-img-dos{
-        order: 1;
-        display: flex;
-        flex-direction: column;width: 100%;
-    }
-    .bienvenida-texto-h2{
-        margin: 0.5em 0;
-        
-    }
-    .bienvenida-texto-p{
-        padding: 1em;
-    }
-    .bienvenida-img-particular{
-        padding:0.5em 0;
-        height: 17.5em;
-    }
-    .bienvenida-img-particular-dosa,.bienvenida-img-particular-dosb{
-        height: 17.5em;
-        padding:0.5em 0;
-    }
-
-
-   
-
-    /*  */
-    /*  */
-    /*  */
-    /*  */
-    /*  */
-    /*  */
-    /*  */
-    /*  */
-
-    
-    .titulo-info-h2{
-        font-size: 1.5em;
-        margin-top: 1em;
-    }
-    .titulo-info-p{
-        padding: 1em ;
-        font-size: 1em;
-    }
-    .titulo-info{
-        text-align: center;
-        font-size: 0.8em;
-    }
-    .instalaciones-info-grid{
-        display: flex;
-        flex-direction: column;
-        grid-template-columns:none;
-        max-width: none;
-        margin: 0 0em;
-     
-    }
-    .grid-img-iguales{
-        height: 17.5em;
-        width: 100%;
-        object-fit: cover;
-    }
-    .info-grid-uno p,.info-grid-dos p,.info-grid-tres p,.info-grid-cuatro p,.info-grid-cinco p{
-        margin: 1em 0;
-        font-size: 0.8em;
-    }
-    .camping-texto{
-        margin: 1em 0;
-        text-align: center;
-    }
-    .camping-texto-h2{
-        font-size: 1em;
-        margin-top: 1em;
-
-    }
-    .camping-parrafo{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        margin: 1em 0.5em;
-        font-size: 0.6em;
-    }
-    .camping-parrafo-p{
-        padding: 0.5em 0;
-        font-weight:900;
-
-    }
-    
-    .camping-grid{
-        display: flex;
-        flex-direction: column;
-        max-width: none;
-        margin: 0em;
-        gap: 0.5em;
-        
-    }
-   
-    /*  */
-    /*  */
-    /*  */
-    /*  */
-    /*  */
-    /*  */
-    /*  */
-    /*  */
-    
-
-.cabañas-seccion{
-    display:flex;
-    flex-direction: column;
-    grid-template-columns: repeat(4,1fr);
-    max-width: none;
-    margin: 0 1em;
-    row-gap: 1em;
-    column-gap: 1em;
-}
-.titulo-info-h2-cabañas{
-    font-size: 2em;
-    margin-top: 1em;
-}
-.cabañas-cont-uno{
-    grid-column: 1/5;
-    display: flex;
-    flex-direction: column;
-}
-.cabañas-img-dist{
-    width: 100%;
-    height: 15em;
-    object-fit: cover;
-}
-.cabañas-info-uno{
-    min-width: 0px;
-}
-
-.cabañas-img-dist-iguales{
-    height: 15em;
-    width: 100%;
-    object-fit: cover;
-}
-
-/*  */
-/*  */
-/*  */
-/*  */
-
-
-/*  */
-/*  */
-/*  */
-/*  */
-
-.ubicacion-contenedor-h2{
-    text-align: center;
-    margin: 1em 0;
-    font-size: 1.4em;
-    color: #fff;
-}
-.ubicacion-parrafo{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: center;
-    font-size: 0.6em;
-    padding: 0 1em;
-    color: #fff;
-}
-.ubicacion-flex{
-    display: flex;
-    flex-direction: column;
-    height: inherit;
-    margin: 1em 0;
-    max-width: none;
-}
-.mapa-img{
-    height: 20em;
-    width: 100%;
-    margin: auto;
-}
-.mapa-prop{
-    width: 100%;
-   
-    height: 17em;
-   
-}
-
-
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-
-.contenedor-footer{
-    height: 15em;
- }
- .footer-fila{
-     display: flex;
-     margin: 0em 0;
-     flex-direction: column;
- }
- .img-texto{
-     width: 100%;
-     color: #050505;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     text-align: center;
-     padding: 0em;
- }
- .img-footer{
-     width: 5em;
-     border-radius: 50%;
- }
- .img-texto-footer{
-     padding: 0 1em;
-     font-size: 0.8em;
- }
- .redes{
-     width: 100%;
-     text-align: center;
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
-
- .iconos-a{
-     margin: 0 0.2em;
-    
- }
- .copy-footer{
-     margin: 0.2em 0;
-     color: #000;
- }
- .copy-texto{
-     font-size: 0.8em;
- }
- .copy-icono{
-     padding: 0em;
- }
- 
-
-
-
-/* Boton  */
-
-#boton-arriba{
-    width: 2em;
-    height: 2em;
-    background-color: #162213;
-    bottom: 20px;
-    right: 20px;
-}
-
-
-
-
-}
-
-
-
-
-
-@media screen and (min-width:480px) and (max-width:800px){
     .contenedor-global{ 
         margin-bottom: 15em;                                             
     }
@@ -1210,6 +840,410 @@ figure{
    
 }
 
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+.contenedor-footer{
+    height: 15em;
+ }
+ .footer-fila{
+     display: flex;
+     margin: 0em 0;
+     flex-direction: column;
+ }
+ .img-texto{
+     width: 100%;
+     color: #050505;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     padding: 0em;
+ }
+ .img-footer{
+     width: 5em;
+     border-radius: 50%;
+ }
+ .img-texto-footer{
+     padding: 0 1em;
+     font-size: 0.8em;
+ }
+ .redes{
+     width: 100%;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .iconos-a{
+     margin: 0 0.2em;
+    
+ }
+ .copy-footer{
+     margin: 0.2em 0;
+     color: #000;
+ }
+ .copy-texto{
+     font-size: 0.8em;
+ }
+ .copy-icono{
+     padding: 0em;
+ }
+ 
+
+
+
+/* Boton  */
+
+#boton-arriba{
+    width: 2em;
+    height: 2em;
+    background-color: #162213;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+
+
+}
+
+
+
+
+
+@media screen and (min-width:480px) and (max-width:800px){
+  .contenedor-global{ 
+    margin-bottom: 13em;                                             
+}
+  .contenedor-logo{
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+    .logo-imagen{
+        width: 70%;
+    }
+    .logo-responsive{
+        height: 5.5em;
+        display: none;
+    }
+    
+    
+    
+  
+    #btn-menu{
+    cursor: pointer;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 0.2em 0;
+    font-size: 1.5em;
+    transition: all 300ms;
+    width: 30%;
+    }
+    #btn-menu:hover{
+        color: #fff;
+    }
+    .nav{
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        top: 2em;
+        width: 100%;
+        left: -100%;
+        transition: all 300ms;
+        
+    }
+    .nav.active{
+        left: 0%;
+    }
+    .menu-item{
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        background: linear-gradient(to left, #5a3f37, #bfe2ca);
+        padding: 1em 0;
+        transition: all 300ms; 
+    }
+    .menu-item:hover{
+        background: linear-gradient(to right, #00467f, #a5cc82); 
+    }
+    
+    .menu-a{
+        display:inline-block;
+        color: #000;
+        transition: all 300ms; 
+        
+    }
+    .menu-a:hover{
+       
+        color: #fff;
+    }
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    
+    
+    .bienvenida-titulo{
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+    
+    .bienvenida-texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        color: #fff;
+        order: 2;
+        line-height: 1.2em;
+        font-size: 1em;
+    }
+    
+    .contenedor-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .bienvenida-img{
+        display: flex;
+        flex-direction: column;
+        order: 3;
+    }
+    
+    .bienvenida-texto-h2{
+        margin: 1em 0;
+        
+    }
+    .bienvenida-texto-p{
+        padding: 1em;
+    }
+    .bienvenida-img-dos{
+        order: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .bienvenida-img-particular{
+        width: 100%;
+        object-fit: cover;
+        padding:0.5em;
+        height: 15em;
+    }
+    .bienvenida-img-particular-dosa,.bienvenida-img-particular-dosb{
+        height: 17,5em;
+        padding:0.5em;
+        object-fit: cover;
+    }
+    .bienvenida-img-particular-dosa{
+        width: 100%;
+    }
+    .bienvenida-img-particular-dosb{
+        width: 100%;
+    }
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+
+    
+    .titulo-info-h2{
+        font-size: 2em;
+        margin-top: 1em;
+    }
+    .titulo-info-p{
+        padding: 20px 0;
+        font-size: 1em;
+    }
+    .titulo-info{
+        text-align: center;
+        font-size: 1em;
+    }
+    .instalaciones-info-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: none;
+        margin: 0 1em;
+     
+    }
+    .grid-img-iguales{
+        height: 17.5em;
+        width: 100%;
+        object-fit: cover;
+    }
+    .info-grid-uno p,.info-grid-tres p,.info-grid-cinco p{
+        column-gap: 1em;   
+    }
+    .camping-texto{
+        margin: 1em 0;
+        text-align: center;
+    }
+    .camping-texto-h2{
+        font-size: 1.2em;
+        margin-top: 1em;
+
+    }
+    .camping-parrafo{
+        text-align: center;
+        margin: 1em 0;
+        font-size: 0.9em;
+    }
+    .camping-parrafo-p{
+        padding: 0.5em 0;
+        font-weight:900;
+
+    }
+    
+    .camping-grid{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        max-width: none;
+        margin: 0 1em;
+        
+    }
+    .img-camping-uno{
+        grid-column: 1/7;
+    }
+    .img-camping-dos{
+        grid-column: 1/4;
+    }
+    .img-igual-grid{
+        height: 20em;
+        width: 100%;
+        object-fit: cover;
+        transition: all 2s;
+    }
+    .img-camping-tres{
+        grid-column: 4/7;
+    }
+    .img-igual-grid-dos{
+        width: 100%;
+        height: 20em;
+        object-fit: cover;
+        transition: all 2s;
+    }
+    .img-camping-cuatro{
+       grid-column: 1/7;
+    }
+    .img-camping-cinco{
+        grid-column: 1/4;
+    }
+    .img-camping-seis{
+        grid-column: 4/7;
+    }
+    .img-camping-siete{
+        grid-column: 1/7;
+    }
+    .img-igual-grid-tres{
+          height: 20em;
+          width: 100%;
+          object-fit: cover;
+          transition: all 2s;
+    }
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    
+
+.cabañas-seccion{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    max-width: none;
+    margin: 0 1em;
+    row-gap: 1em;
+    column-gap: 1em;
+}
+.titulo-info-h2-cabañas{
+    font-size: 2em;
+    margin-top: 1em;
+}
+.cabañas-cont-uno{
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cabañas-img-dist{
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+}
+.cabañas-info-uno{
+    min-width: 0px;
+}
+
+.cabañas-img-dist-iguales{
+    height: 15em;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+.ubicacion-contenedor-h2{
+    text-align: center;
+    margin: 1em 0;
+    font-size: 2em;
+    color: #fff;
+}
+.ubicacion-parrafo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.9em;
+    padding: 0 1em;
+    color: #fff;
+}
+.ubicacion-flex{
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    margin: 1em auto;
+    max-width: none;
+}
+.mapa-img{
+    height: 27.5em;
+    width: 90%;
+    margin: auto;
+}
+.mapa-prop{
+    width: 90%;
+    margin: auto;
+    height: 20em;
+    border: none;
+}
 
 
 /*  */
