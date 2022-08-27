@@ -2,13 +2,12 @@
 body{
     font-size: 20px;
     font-family: 'Lora', serif; 
-    scroll-behavior:smooth;
 }
 
 .contenedor-global{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows:repeat(7,auto);
+    grid-template-rows:repeat(8,auto);
     grid-template-areas:
                          "logo  logo"
                          "imgone imgone"
@@ -16,10 +15,8 @@ body{
                          "instalaciones instalaciones"
                          "servicios servicios"
                          "ubicacion ubicacion"
-                         "cabañas cabañas";
-                            position: relative;
-                            z-index: 10;
-                            margin-bottom: 10em;  
+                         "cabañas cabañas"
+                         "footer footer ";
                     
                                            
 }
@@ -438,12 +435,7 @@ figure{
 
 .contenedor-footer{
    background: linear-gradient(to left, #5a3f37, #bfe2ca);
-   position: fixed;
-   z-index: 1;
-   bottom: 0;
-   width: 100%;
-   
- 
+   grid-area: footer;
 }
 .footer-fila{
     display: flex;
@@ -542,7 +534,6 @@ figure{
     border: 4px solid transparent;
     transition: all 300ms ease;
     transform: scale(0);
-    scroll-behavior:inherit;
 }
 #boton-arriba:hover{
     transform: scale(1.1);
@@ -554,9 +545,7 @@ figure{
 
 
 @media screen and (max-width:480px){
-    .contenedor-global{ 
-        margin-bottom: 15em;                                             
-    }
+
       .contenedor-logo{
             position: fixed;
             width: 100%;
@@ -624,6 +613,12 @@ figure{
  /*  */
     /*  */
     /*  */
+ 
+    .contenedor-imagen{
+        grid-area: imgone;
+        overflow: hidden;
+        height: 20em;
+    } 
     /*  */
     /*  */
     /*  */
@@ -851,9 +846,7 @@ figure{
 /*  */
 
 
-.contenedor-footer{
-    height: 15em;
- }
+
  .footer-fila{
      display: flex;
      margin: 0em 0;
@@ -889,7 +882,7 @@ figure{
     
  }
  .copy-footer{
-     margin: 0.2em 0;
+     margin: 0.5em 0;
      color: #000;
  }
  .copy-texto{
@@ -922,9 +915,7 @@ figure{
 
 
 @media screen and (min-width:480px) and (max-width:800px){
-  .contenedor-global{ 
-    margin-bottom: 13em;                                             
-}
+
   .contenedor-logo{
         position: fixed;
         width: 100%;
@@ -993,6 +984,11 @@ figure{
     /*  */
     /*  */
     /*  */
+    .contenedor-imagen{
+        grid-area: imgone;
+        overflow: hidden;
+        height: 25em;
+    }
     /*  */
     /*  */
     /*  */
@@ -1256,17 +1252,6 @@ figure{
 /*  */
 
 
-.contenedor-footer{
-    background: linear-gradient(to left, #5a3f37, #bfe2ca);
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    height: inherit;
-    width: 100%;
-    height: 13em;
-    
-  
- }
  .footer-fila{
      display: flex;
      margin: 0em 0;
@@ -1301,7 +1286,7 @@ figure{
     
  }
  .copy-footer{
-     margin: 0.2em 0;
+     margin: 1em 0;
      color: #000;
  }
  .copy-texto{
@@ -1424,11 +1409,6 @@ figure{
     .contenedor-global{
        padding: 0 8em;
                                 
-    }
-    .contenedor-footer{
-        padding: 0 8em;
-        margin: 0 8em;
-        width: inherit;
     }
 
 }
