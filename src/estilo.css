@@ -924,74 +924,74 @@ figure{
 
 
 @media screen and (min-width:480px) and (max-width:800px){
-  .contenedor-global{ 
-    margin-bottom: 13em;                                             
-}
-  .contenedor-logo{
-        position: fixed;
-        width: 100%;
-        z-index: 999;
+    .contenedor-global{ 
+        margin-bottom: 15em;                                             
     }
-    .logo-imagen{
-        width: 70%;
-    }
-    .logo-responsive{
-        height: 5.5em;
-        display: none;
-    }
-    
-    
-    
-  
-    #btn-menu{
-    cursor: pointer;
-    display: block;
-    color: #000;
-    text-align: center;
-    padding: 0.2em 0;
-    font-size: 1.5em;
-    transition: all 300ms;
-    width: 30%;
-    }
-    #btn-menu:hover{
-        color: #fff;
-    }
-    .nav{
-        position: fixed;
-        flex-direction: column;
-        justify-content: center;
-        top: 2em;
-        width: 100%;
-        left: -100%;
-        transition: all 300ms;
+      .contenedor-logo{
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+        }
+        .logo-imagen{
+            width: 70%;
+        }
+        .logo-responsive{
+            height: 5.5em;
+            display: none;
+        }
         
-    }
-    .nav.active{
-        left: 0%;
-    }
-    .menu-item{
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid #fff;
-        background: linear-gradient(to left, #5a3f37, #bfe2ca);
-        padding: 1em 0;
-        transition: all 300ms; 
-    }
-    .menu-item:hover{
-        background: linear-gradient(to right, #00467f, #a5cc82); 
-    }
-    
-    .menu-a{
-        display:inline-block;
+        
+        
+      
+        #btn-menu{
+        cursor: pointer;
+        display: block;
         color: #000;
-        transition: all 300ms; 
+        text-align: center;
+        padding: 0.2em 0;
+        font-size: 1.5em;
+        transition: all 300ms;
+        width: 30%;
+        }
+        #btn-menu:hover{
+            color: #fff;
+        }
+        .nav{
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            top: 2em;
+            width: 100%;
+            left: -100%;
+            transition: all 300ms;
+            
+        }
+        .nav.active{
+            left: 0%;
+        }
+        .menu-item{
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #fff;
+            background: linear-gradient(to left, #5a3f37, #bfe2ca);
+            padding: 1em 0;
+            transition: all 300ms; 
+        }
+        .menu-item:hover{
+            background: linear-gradient(to right, #00467f, #a5cc82); 
+        }
         
-    }
-    .menu-a:hover{
-       
-        color: #fff;
-    }
-    /*  */
+        .menu-a{
+            display:inline-block;
+            color: #000;
+            transition: all 300ms; 
+            
+        }
+        .menu-a:hover{
+           
+            color: #fff;
+        }
+ /*  */
     /*  */
     /*  */
     /*  */
@@ -1002,7 +1002,7 @@ figure{
     
     
     .bienvenida-titulo{
-        font-size: 1.5em;
+        font-size: 1.2em;
         margin-top: 1em;
     }
     
@@ -1011,52 +1011,47 @@ figure{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: left;
+        text-align: center;
         color: #fff;
         order: 2;
         line-height: 1.2em;
-        font-size: 1em;
+        font-size: 0.8em;
     }
     
     .contenedor-grid{
         display: flex;
         flex-direction: column;
+        margin: 0em;
     }
     .bienvenida-img{
         display: flex;
         flex-direction: column;
         order: 3;
     }
-    
+     .bienvenida-img-dos{
+        order: 1;
+        display: flex;
+        flex-direction: column;width: 100%;
+    }
     .bienvenida-texto-h2{
-        margin: 1em 0;
+        margin: 0.5em 0;
         
     }
     .bienvenida-texto-p{
         padding: 1em;
     }
-    .bienvenida-img-dos{
-        order: 1;
-        display: flex;
-        flex-direction: column;
-    }
     .bienvenida-img-particular{
-        width: 100%;
-        object-fit: cover;
-        padding:0.5em;
-        height: 15em;
+        padding:0.5em 0;
+        height: 17.5em;
     }
     .bienvenida-img-particular-dosa,.bienvenida-img-particular-dosb{
-        height: 17,5em;
-        padding:0.5em;
-        object-fit: cover;
+        height: 17.5em;
+        padding:0.5em 0;
     }
-    .bienvenida-img-particular-dosa{
-        width: 100%;
-    }
-    .bienvenida-img-particular-dosb{
-        width: 100%;
-    }
+
+
+   
+
     /*  */
     /*  */
     /*  */
@@ -1068,22 +1063,23 @@ figure{
 
     
     .titulo-info-h2{
-        font-size: 2em;
-        margin-top: 1em;
+        font-size: 1.5em;
+        margin-top: 2em;
     }
     .titulo-info-p{
-        padding: 20px 0;
+        padding: 1em ;
         font-size: 1em;
     }
     .titulo-info{
         text-align: center;
-        font-size: 1em;
+        font-size: 0.8em;
     }
     .instalaciones-info-grid{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
+        display: flex;
+        flex-direction: column;
+        grid-template-columns:none;
         max-width: none;
-        margin: 0 1em;
+        margin: 0 0em;
      
     }
     .grid-img-iguales{
@@ -1091,22 +1087,25 @@ figure{
         width: 100%;
         object-fit: cover;
     }
-    .info-grid-uno p,.info-grid-tres p,.info-grid-cinco p{
-        column-gap: 1em;   
+    .info-grid-uno p,.info-grid-dos p,.info-grid-tres p,.info-grid-cuatro p,.info-grid-cinco p{
+        margin: 1em 0;
+        font-size: 0.8em;
     }
     .camping-texto{
         margin: 1em 0;
         text-align: center;
     }
     .camping-texto-h2{
-        font-size: 1.2em;
+        font-size: 1em;
         margin-top: 1em;
 
     }
     .camping-parrafo{
-        text-align: center;
-        margin: 1em 0;
-        font-size: 0.9em;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 1em 0.5em;
+        font-size: 0.6em;
     }
     .camping-parrafo-p{
         padding: 0.5em 0;
@@ -1115,51 +1114,14 @@ figure{
     }
     
     .camping-grid{
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
+        display: flex;
+        flex-direction: column;
         max-width: none;
-        margin: 0 1em;
+        margin: 0em;
+        gap: 0.5em;
         
     }
-    .img-camping-uno{
-        grid-column: 1/7;
-    }
-    .img-camping-dos{
-        grid-column: 1/4;
-    }
-    .img-igual-grid{
-        height: 20em;
-        width: 100%;
-        object-fit: cover;
-        transition: all 2s;
-    }
-    .img-camping-tres{
-        grid-column: 4/7;
-    }
-    .img-igual-grid-dos{
-        width: 100%;
-        height: 20em;
-        object-fit: cover;
-        transition: all 2s;
-    }
-    .img-camping-cuatro{
-       grid-column: 1/7;
-    }
-    .img-camping-cinco{
-        grid-column: 1/4;
-    }
-    .img-camping-seis{
-        grid-column: 4/7;
-    }
-    .img-camping-siete{
-        grid-column: 1/7;
-    }
-    .img-igual-grid-tres{
-          height: 20em;
-          width: 100%;
-          object-fit: cover;
-          transition: all 2s;
-    }
+   
     /*  */
     /*  */
     /*  */
@@ -1171,7 +1133,8 @@ figure{
     
 
 .cabañas-seccion{
-    display: grid;
+    display:flex;
+    flex-direction: column;
     grid-template-columns: repeat(4,1fr);
     max-width: none;
     margin: 0 1em;
@@ -1184,8 +1147,8 @@ figure{
 }
 .cabañas-cont-uno{
     grid-column: 1/5;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
 }
 .cabañas-img-dist{
     width: 100%;
@@ -1215,16 +1178,16 @@ figure{
 
 .ubicacion-contenedor-h2{
     text-align: center;
-    margin: 1em 0;
-    font-size: 2em;
+    margin-top: 2em;
+    font-size: 1.4em;
     color: #fff;
 }
 .ubicacion-parrafo{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     justify-content: center;
-    font-size: 0.9em;
+    font-size: 0.8em;
     padding: 0 1em;
     color: #fff;
 }
@@ -1232,20 +1195,21 @@ figure{
     display: flex;
     flex-direction: column;
     height: inherit;
-    margin: 1em auto;
+    margin: 1em 0;
     max-width: none;
 }
 .mapa-img{
-    height: 27.5em;
-    width: 90%;
+    height: 20em;
+    width: 100%;
     margin: auto;
 }
 .mapa-prop{
-    width: 90%;
-    margin: auto;
-    height: 20em;
-    border: none;
+    width: 100%;
+   
+    height: 17em;
+   
 }
+
 
 
 /*  */
