@@ -101,7 +101,7 @@ menuCelular.addEventListener("click",(e)=>{
     
 });
 //  efecto menu celular/scroll behavior
-for(a of link){
+for(let a of link){
     a.addEventListener("click",()=>{
         nav.classList.toggle("active");
     })
